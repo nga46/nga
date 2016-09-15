@@ -163,7 +163,7 @@ public class nga1 {
                   if(d==0){
                     Float x=(-b/2*a);
                     System.out.println("Phương trình có nghiệm x="+x);}
-                    if (d!=0)
+                    if (d>0)
                     { Float x1= (float)(-b+ Math.sqrt(d)/2*a);
                         Float x2=(float)(-b- Math.sqrt(d)/2*a);
             System.out.println( " phương trình có 2 nghiệm x1=" +x1 );
