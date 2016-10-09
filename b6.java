@@ -38,22 +38,42 @@ public class b6 {
 //            System.out.println();}
 
 
-        int max;
-        int min;
+
+        int i;
+        int j;
+        int x;
 
         int[] a =new int[10];
         Scanner num=new Scanner(System.in);
-        for(int i= 0; i<10; i++) {
-            System.out.println("nhập số");
+
+        for( i= 0; i<10; i++) {System.out.println("nhập số");
             int h = num.nextInt();
-            a[i]=h;
-        }
-        max = min= a[0];
-        for (int i= 0; i<10; i++)
-        {  if (max<a[i]) { max=a[i];}
-        if (min> a[i])  {min=a[i];}}
-            System.out.println("max" +max);
-            System.out.println("min"+min);
+            a[i]=h;}
+
+        for(i=0; i<9; i++ )
+            for (j=i+1; j<10; j++)
+                if (a[i]>a[j])
+                { x=a[i];
+                    a[i]=a[j];
+                    a[j]=x;}
+        for(i=0;i<10;i++){
+            System.out.println(a[i]);}
+
+
+
+
+
+
+            }
+
+
+
+//        max = min= a[0];
+//        for (int i= 0; i<10; i++)
+//        {  if (max<a[i]) { max=a[i];}
+//        if (min> a[i])  {min=a[i];}}
+//            System.out.println("max" +max);
+//            System.out.println("min"+min);
 
 
 
@@ -73,7 +93,7 @@ public class b6 {
 
 
 
-    }}
+    }
 
 
 
